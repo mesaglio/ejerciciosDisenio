@@ -14,6 +14,7 @@ namespace Sucursales
         public int cantidadDePersonas;
 
         public abstract ProtoOficina clonar();
+        public abstract void imprimir();
 
     }
 }

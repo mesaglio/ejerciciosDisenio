@@ -8,16 +8,20 @@ namespace Sucursales
 {
     class OficinaStandar : ProtoOficina
     {
-        public OficinaStandar(int escri,bool ventana,int perso)
+        public OficinaStandar()
         {
-            cantidadDeEscritorio = escri;
-            tieneVentanas = ventana;
-            cantidadDePersonas = perso;
+            cantidadDeEscritorio = 4;
+            tieneVentanas = false;
+            cantidadDePersonas = 4;
         }
         public override ProtoOficina clonar()
         {
-            OficinaStandar ofi = new OficinaStandar(4, false, 4);
-            return ofi;
+
+            return this;
+        }
+        public override void imprimir()
+        {
+            Console.WriteLine("Oficina Estandar");
         }
     }
 }

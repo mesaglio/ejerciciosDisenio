@@ -8,16 +8,19 @@ namespace Sucursales
 {
     class OficinaSeguridad : ProtoOficina
     {
-        public OficinaSeguridad(int escri, bool ventana, int perso)
+        public OficinaSeguridad()
         {
-            cantidadDeEscritorio = escri;
-            tieneVentanas = ventana;
-            cantidadDePersonas = perso;
+            cantidadDeEscritorio = 1;
+            tieneVentanas = true;
+            cantidadDePersonas = 3;
         }
         public override ProtoOficina clonar()
         {
-            OficinaSeguridad ofi = new OficinaSeguridad(1, true, 3);
-            return ofi;
+            return this;
+        }
+        public override void imprimir()
+        {
+            Console.WriteLine("Oficina de Seguridad");
         }
     }
 }

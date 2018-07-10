@@ -8,16 +8,19 @@ namespace Sucursales
 {
     class OficinaGerencial : ProtoOficina
     {
-        public OficinaGerencial(int escri, bool ventana, int perso)
+        public OficinaGerencial()
         {
-            cantidadDeEscritorio = escri;
-            tieneVentanas = ventana;
-            cantidadDePersonas = perso;
+            cantidadDeEscritorio = 2;
+            tieneVentanas = true;
+            cantidadDePersonas = 2;
         }
         public override ProtoOficina clonar()
         {
-            OficinaGerencial ofi = new OficinaGerencial(2,true,2);
-            return ofi;
+            return this;
+        }
+        public override void imprimir()
+        {
+            Console.WriteLine("Oficina Gerencial");
         }
     }
 }
