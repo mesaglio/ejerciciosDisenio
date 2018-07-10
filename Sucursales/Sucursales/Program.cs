@@ -10,7 +10,9 @@ namespace Sucursales
     {
         static void Main(string[] args)
         {
-            
+            Banco banco = new Banco();
+            Console.WriteLine("Un banco fue creado.");
+
         }
     }
 }

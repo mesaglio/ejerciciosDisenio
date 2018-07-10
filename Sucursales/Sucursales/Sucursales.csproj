@@ -42,6 +42,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Banco.cs" />
+    <Compile Include="OficinaGerencial.cs" />
+    <Compile Include="OficinaSeguridad.cs" />
+    <Compile Include="OficinaStandar.cs" />
+    <Compile Include="ProtoOficina.cs" />
+    <Compile Include="Sucursales.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
