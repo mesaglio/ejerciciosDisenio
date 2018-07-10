@@ -8,7 +8,7 @@ namespace Transporte
 {
     abstract class Transportista
     {
-        abstract public void cotizar(Envio envio) { }
+        abstract public double cotizar(Envio envio);
 
 
 

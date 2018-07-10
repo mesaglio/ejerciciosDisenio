@@ -15,7 +15,7 @@ namespace Transporte
 
         public void calcularEnvio(ref Envio envio)
         {
-            precio(this.transportista.cotizar(envio));
+            precio = transportista.cotizar(envio);
         }
 
 		public bool esLocal()

@@ -11,10 +11,9 @@ namespace Transporte
     {
         static void Main(string[] args)
         {
-            
-            juan.id(8);
-            Console.Write(juan.id());
-            Transportista trans = new Transportista();
+           
+           Console.WriteLine();
+           Environment.Exit(0);
         }
     }
 }

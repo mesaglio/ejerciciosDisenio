@@ -9,8 +9,8 @@ namespace Transporte
     class TransportistaPorPeso : Transportista
     {
         public double tarifa { get; set; }
-        public abstract override void cotizar(Envio envio) {
-            return tarifa * envio.paquete.peso();
+        public override double cotizar(Envio envio) {
+            return tarifa * envio.paquete.peso;
         }
 
 

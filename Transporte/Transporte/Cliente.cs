@@ -1,4 +1,9 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
 namespace Transporte
 {
 
@@ -6,13 +11,9 @@ namespace Transporte
     {
         public int id { get; set; }
 
-        private List<Envios> envios = new List<Envios>();
+        private List<Envio> envios = new List<Envio>();
 
 
 
     }
 }
-
-
-
-	
