@@ -12,10 +12,11 @@ namespace Transporte
         public Paquete paquete { get; set; }
         public double precio { get; set; }
         public int distancia { get; set; } //0 Local,1 LargaDistancia
+        public string descripcion { get; set; }
 
-        public void calcularEnvio(ref Envio envio)
+        public void calcularEnvio()
         {
-            precio = transportista.cotizar(envio);
+            precio = transportista.cotizar(this);
         }
 
 		public bool esLocal()

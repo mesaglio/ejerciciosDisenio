@@ -9,7 +9,8 @@ namespace Transporte
 
     public class Cliente
     {
-        public int id { get; set; }
+        public string nombre { set; get; }
+        public int id { set; get; }
 
         private List<Envio> envios = new List<Envio>();
 
