@@ -9,7 +9,7 @@ namespace Transporte
     abstract class Transportista
     {
         abstract public double cotizar(Envio envio);
-
+        public string nombre;
 
 
     }

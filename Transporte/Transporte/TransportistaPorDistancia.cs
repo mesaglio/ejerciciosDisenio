@@ -9,14 +9,14 @@ namespace Transporte
     class TransportistaPorDistancia : Transportista
     {
         public double tarifaLocal { get; set; }
-        public double otraTarifa { get; set; }
+        public double tarifaLargaDistancia { get; set; }
 
         public override double cotizar(Envio envio) {
             if (envio.esLocal())
             {
                 return tarifaLocal * envio.paquete.peso;
             }
-            return this.otraTarifa * envio.paquete.peso;
+            return this.tarifaLargaDistancia * envio.paquete.peso;
         }
 
 
