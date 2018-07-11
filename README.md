@@ -1,6 +1,5 @@
 # Los diagramas se encuentran cada uno dentro de su carpeta.
-===
-
+---
 # Pruebas para mostrar el correcto funcionamiento
 ## Transporte
 ### modificar envio1.distancia de 0 a 1 y ver las tarifas calculadas
