@@ -8,7 +8,6 @@ namespace Transporte
 {
     class Envio
     {
-        public Transportista transportista { get; set; }
         public Paquete paquete { get; set; }
         public double precio { get; set; }
         public int distancia { get; set; } //0 Local,1 LargaDistancia
