@@ -8,8 +8,6 @@ namespace Mobiliario
 {
     abstract class Elemento
     {
-        public double precio;
-        public int codigo;
         abstract public double calcularPrecio();
     }
 }

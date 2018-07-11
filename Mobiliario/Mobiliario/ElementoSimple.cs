@@ -8,8 +8,9 @@ namespace Mobiliario
 {
     class ElementoSimple : Elemento
     {
-        public ElementoSimple(double _precio, int _codigo)
-        {
+        public double precio;
+        public int codigo;
+        public ElementoSimple(double _precio, int _codigo){
             precio = _precio;
             codigo = _codigo;
         }
