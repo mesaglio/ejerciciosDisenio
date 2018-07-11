@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 
 namespace Navegador
 {
-    class Pdf : Extension
+    class Photoshop : Extension
     {
-        public override void Abrir() {
-            Console.WriteLine("El archivo Pdf se abrio correctamente. \n");
+        public override void Abrir()
+        {
+            Console.WriteLine("El archivo Photoshop se abrio correctamente. \n");
         }
     }
 }

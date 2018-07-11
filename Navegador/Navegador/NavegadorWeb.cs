@@ -10,12 +10,7 @@ namespace Navegador
 {
     class NavegadorWeb
     {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Estas en el navegador web");
-            Console.ReadKey();
-        }
-        List<Extension> extensiones = new List<Extension>();
+        public List<Extension> extensiones = new List<Extension>();
 
         public void agregarExtencion(Extension extension)
         {

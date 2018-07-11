@@ -8,6 +8,8 @@ namespace Navegador
 {
     class Visio : Extension
     {
-        public override void Abrir() { }
+        public override void Abrir() {
+            Console.WriteLine("El archivo Visio se abrio correctamente. \n");
+        }
     }
 }

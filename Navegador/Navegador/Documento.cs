@@ -8,22 +8,27 @@ namespace Navegador
 {
     class Documento
     {
-        NavegadorWeb web;//= new NavegadorWeb();
-        Extension extension;
-        public Documento(NavegadorWeb _web, Extension _extension)
+        public Extension extension;
+        public string nombre;
+        public Documento(String _nombre, Extension _extension)
         {
-            web = _web;
+            nombre = _nombre;
             extension = _extension;
         }
-        public void abrirEnWeb()
+        public void abrirEnWeb(NavegadorWeb web)
         {
-
-            bool tengoLaExtencion = web.ExtensionesDisponibles().Contains(extension);
-            if (tengoLaExtencion)
+            if (webTieneMiExtension(web))
             {
                 extension.Abrir();
             }
-            else { Console.WriteLine("Este documento tiene una extension desconocida"); }
+            else
+            {
+                Console.WriteLine("El documento {0} tiene una extension desconocida.\n", this.nombre);
+            }
+        }
+        public bool webTieneMiExtension(NavegadorWeb web)
+        {
+            return web.extensiones.Contains(this.extension);
         }
     }
 }
