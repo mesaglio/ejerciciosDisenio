@@ -42,6 +42,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Elemento.cs" />
+    <Compile Include="Mobiliario.cs" />
+    <Compile Include="Kit.cs" />
+    <Compile Include="ElementoSimple.cs" />
+    <Compile Include="GrupoElemento.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
