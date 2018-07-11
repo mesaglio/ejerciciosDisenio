@@ -10,7 +10,7 @@
 ## Bateria
 ### en la opcion 1 puede ver los valores de la bateria, en la opcion 2 puede setear los valores para obtener los resultados
 ## Historial
-### 
+### sleccione un usuario ejecute un boton y despues lea el archivo de logs
 ## Navegador
 ### el objeto web no posee ninguna extension, intente abrir los doocumentos. Luego agregue extensiones y vuelva abrir los documentos
 ## Mobiliario
